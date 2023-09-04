@@ -1,0 +1,24 @@
+from lxml import etree
+
+xml_content = """
+<!DOCTYPE bookstore [
+    <!ELEMENT bookstore (book+)>
+    <!ELEMENT book (title, author, price)>
+    <!ELEMENT title (#PCDATA)>
+    <!ELEMENT author (#PCDATA)>
+    <!ELEMENT price (#PCDATA)>
+]>
+<bookstore>
+    <book>
+        <title>XML Basics</title>
+        <author>John Doe</author>
+        <price>29.99</price>
+    </book>
+</bookstore>
+"""
+
+try:
+    doc = etree.fromstring(xml_content)
+    print("Internal DTD Validation Successful")
+except etree.XMLSyntaxError as e:
+    print(f"Internal DTD Validation Error: {e}")

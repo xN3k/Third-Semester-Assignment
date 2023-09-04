@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<users>
+    <user>
+        <id>1</id>
+        <name>Saugat Regmi</name>
+        <email>saugatregmi33@gmail.com</email>
+    </user>
+    <user>
+        <id>2</id>
+        <name>Alice Smith</name>
+        <email>sharmaalish@gmail.com</email>
+    </user>
+    <user>
+        <id>3</id>
+        <name>Aadarsha Chaudhary</name>
+        <email>chauaadarsha@gmail.com</email>
+    </user>
+        <user>
+        <id>4</id>
+        <name>Swastika Regmi</name>
+        <email>regmiswastika@gmail.com</email>
+    </user>
+    <user>
+        <id>5</id>
+        <name>Rijan Neupane</name>
+        <email>neupanerijann@gmail.com</email>
+    </user>
+</users>
