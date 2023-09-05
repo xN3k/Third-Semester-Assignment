@@ -1,0 +1,42 @@
+<?php
+// Function to set a cookie with the current date, time, and day
+function setDateTimeCookie() {
+    $currentDateTime = date("Y-m-d H:i:s");
+    setcookie("datetime_cookie", $currentDateTime, time() + 3600); // Cookie expires in 1 hour
+}
+
+// Check if the "List Cookies" button is clicked
+if (isset($_POST['list_cookies'])) {
+    echo "<h1>Stored Cookies:</h1>";
+    if (isset($_COOKIE['datetime_cookie'])) {
+        $storedDateTime = $_COOKIE['datetime_cookie'];
+        echo "Stored Date and Time: $storedDateTime";
+    } else {
+        echo "No cookies found.";
+    }
+}
+
+// Set the cookie when the page loads
+setDateTimeCookie();
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Current Date and Time</title>
+</head>
+<body>
+    <h1>Current Date and Time</h1>
+    <p>
+        Date: <?php echo date("Y-m-d"); ?><br>
+        Time: <?php echo date("H:i:s"); ?><br>
+        Day: <?php echo date("l"); ?>
+    </p>
+
+    <form method="post">
+        <input type="submit" name="list_cookies" value="List Cookies">
+    </form>
+</body>
+</html>

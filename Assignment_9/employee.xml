@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<company>
+    <employee id="1">
+        <personal_info>
+            <first_name>John</first_name>
+            <last_name>Doe</last_name>
+            <date_of_birth>1990-05-15</date_of_birth>
+        </personal_info>
+        <contact_info>
+            <email>john.doe@example.com</email>
+            <phone>123-456-7890</phone>
+            <address>
+                <street>123 Main St</street>
+                <city>New York</city>
+                <state>NY</state>
+                <zip_code>10001</zip_code>
+            </address>
+        </contact_info>
+        <department>HR</department>
+        <position>Manager</position>
+        <salary currency="USD">60000.00</salary>
+    </employee>
+    <employee id="2">
+        <personal_info>
+            <first_name>Jane</first_name>
+            <last_name>Smith</last_name>
+            <date_of_birth>1985-08-20</date_of_birth>
+        </personal_info>
+        <contact_info>
+            <email>jane.smith@example.com</email>
+            <phone>987-654-3210</phone>
+            <address>
+                <street>456 Elm St</street>
+                <city>Los Angeles</city>
+                <state>CA</state>
+                <zip_code>90001</zip_code>
+            </address>
+        </contact_info>
+        <department>IT</department>
+        <position>Software Engineer</position>
+        <salary currency="USD">80000.00</salary>
+    </employee>
+</company>
